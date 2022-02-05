@@ -10,70 +10,905 @@ Scribed notes were taken by the students and used with permission.
 
 The instructor notes often span several lectures
 
-| LEC # | TOPICS | SCRIBE NOTES | Instructor NOTES |
-| --- | --- | --- | --- |
-| 1 | Course Introduction  {{< br >}}Fibonacci Heaps | Fibonacci Heaps ([PDF]({{< baseurl >}}/resources/fibheaps)) (Courtesy of David Andersen, Ioana Dumitriu, John Dunagan, and Akshay Patil.) | ([PDF 1]({{< baseurl >}}/resources/n0_intro))  {{< br >}}([PDF 2]({{< baseurl >}}/resources/n1_fibonacci)) |
-| 2 | MST  {{< br >}}Persistent Data Structures | Persistent Data Structures ([PDF]({{< baseurl >}}/resources/persistent)) (Courtesy of Sommer Gentry and Eddie Kohler.) | ([PDF]({{< baseurl >}}/resources/n2_persistent)) |
-| 3 | Splay Trees | Splay Trees ([PDF]({{< baseurl >}}/resources/dzhang_splaytree)) (Courtesy of Xin Zhang.) | ([PDF]({{< baseurl >}}/resources/n3_splay)) |
-| 4 | Splay Trees (cont.)  {{< br >}}Suffix Trees  {{< br >}}Tries | Suffix Trees and Fibonacci Heaps ([PDF]({{< baseurl >}}/resources/suffix)) | ([PDF]({{< baseurl >}}/resources/n4_suffix)) |
-| 5 | Suffix Trees (cont.)  {{< br >}}Tries (cont.)  {{< br >}}Dial's Algorithm | &nbsp; |
-| 6 | Dijkstra's Algorithm  {{< br >}}Van Emde Boas Queues | Van Emde Boas Queues (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/veb)) (Courtesy of Abhi Shelat, Andrew Menard, and Akshay Patil.) | ([PDF]({{< baseurl >}}/resources/n5_bucket)) |
-| 7 | Van Emde Boas Queues (cont.)  {{< br >}}Hashing | &nbsp; | ([PDF]({{< baseurl >}}/resources/n6_hashing)) |
-| 8 | 2-Level Hashing  {{< br >}}Network Flows | Maximum Flows ([PDF]({{< baseurl >}}/resources/max_flow_dff)) (Courtesy of Alexandr Andoni.) | ([PDF]({{< baseurl >}}/resources/n7_flow)) |
-| 9 | Network Flows: Augmenting Paths, Maximum Augmenting Paths, Scaling | &nbsp; |
-| 10 | Reductions between Flow Problems  {{< br >}}Bipartite Matching  {{< br >}}Shortest Augmenting Path  {{< br >}}Blocking Flows | &nbsp; |
-| 11 | Blocking Flows (cont.) | &nbsp; |
-| 12 | Min-Cost Flows | Min-Cost Flow Algorithms ([PDF]({{< baseurl >}}/resources/min_cost_flow)) (Courtesy of Wendy Chang.) | ([PDF]({{< baseurl >}}/resources/n10_mincostflow)) |
-| 13 | Min-Cost Flows (cont.)  {{< br >}}Linear Programming | &nbsp; | ([PDF]({{< baseurl >}}/resources/n10_mincostflow)) |
-| 14 | Linear Programming (cont.)  {{< br >}}Structure of Optima  {{< br >}}Weak Duality | Duality ([PDF]({{< baseurl >}}/resources/dualitynotes)) (Courtesy of Jay-Kumar Sundararajan.) | &nbsp; |
-| 15 | Linear Programming (cont.)  {{< br >}}Strong Duality | Duality([PDF]({{< baseurl >}}/resources/dualitynotes)) (Courtesy of Jay-Kumar Sundararajan.) | &nbsp; |
-| 16 | Linear Programming (cont.)  {{< br >}}Complementary Slackness  {{< br >}}Algorithms: Simplex, Ellipsoid | Duality ([PDF]({{< baseurl >}}/resources/dualitynotes)) (Courtesy of Jay-Kumar Sundararajan.) | &nbsp; |
-| 17 | Linear Programming (cont.)  {{< br >}}Algorithms: Interior Point | &nbsp; |
-| 18 | Approximation Algorithms  {{< br >}}NP-hard problems | &nbsp; | ([PDF]({{< baseurl >}}/resources/n15_approx)) |
-| 19 | 4/3-Approximation for TSP | &nbsp; |
-| 20 | Relaxations  {{< br >}}Directed TSP | &nbsp; |
-| 21 | Randomized Rounding  {{< br >}}Chernoff Bound  {{< br >}}Fixed Parameter Tractability  {{< br >}}Kernelization | &nbsp; | ([PDF]({{< baseurl >}}/resources/n22_fixedparam)) |
-| 22 | Online Algorithms (Ski Rental, Load Balancing, Paging) | Lower Bounds for Competitive Ratios of Randomized  {{< br >}}Online Algorithms ([PDF]({{< baseurl >}}/resources/ragnarok)) (Courtesy of Chun-Chieh Lin.) | ([PDF]({{< baseurl >}}/resources/n23online)) |
-| 23 | Randomized Online Algorithms (Adversaries, Fiat's Marking Algorithm, Potential Functions, Yao's Minimax Principle) | Lower Bounds for Competitive Ratios of Randomized  {{< br >}}Online Algorithms ([PDF]({{< baseurl >}}/resources/ragnarok)) (Courtesy of Chun-Chieh Lin.) | &nbsp; |
-| 24 | K-Server Problem  {{< br >}}Double-Coverage Algorithm  {{< br >}}Computational Geometry Introduction (Orthogonal Range Search) | &nbsp; |
-| 25 | Sweep Algorithms (Convex Hull, Segment Intersection, Voronoi Diagrams) | Sweep Line ([PDF]({{< baseurl >}}/resources/rasmu_sweepline)) (Courtesy of Matt Rasmussen.) | ([PDF]({{< baseurl >}}/resources/n25_geometry)) |
-| 26 | Sweep Algorithms (Voronoi Diagrams)  {{< br >}}Randomized Incremental Constructions  {{< br >}}Backwards Analysis  {{< br >}}Linear Programming in Fixed Dimension | &nbsp; |
-| 27 | (Optional Material) External Memory Algorithms | &nbsp; | ([PDF]({{< baseurl >}}/resources/n28_external)) |
-| 28 | (Optional Material) Cache Oblivious Algorithms: Matrix Multiplication, Linked Lists, Median | &nbsp; |
-| 29 | (Optional Material) Cache Oblivious Algorithms: Search  {{< br >}}Streaming Model | &nbsp; |
-| 29 | (Optional Material) Parallel Algorithms  {{< br >}}  | &nbsp; | ([PDF]({{< baseurl >}}/resources/n32parallel)) 
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+LEC #
+{{< thclose >}}
+{{< thopen >}}
+TOPICS
+{{< thclose >}}
+{{< thopen >}}
+SCRIBE NOTES
+{{< thclose >}}
+{{< thopen >}}
+Instructor NOTES
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+1
+{{< tdclose >}}
+{{< tdopen >}}
+Course Introduction  
+Fibonacci Heaps
+{{< tdclose >}}
+{{< tdopen >}}
+Fibonacci Heaps ([PDF]({{< baseurl >}}/resources/fibheaps)) (Courtesy of David Andersen, Ioana Dumitriu, John Dunagan, and Akshay Patil.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF 1]({{< baseurl >}}/resources/n0_intro))  
+([PDF 2]({{< baseurl >}}/resources/n1_fibonacci))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+2
+{{< tdclose >}}
+{{< tdopen >}}
+MST  
+Persistent Data Structures
+{{< tdclose >}}
+{{< tdopen >}}
+Persistent Data Structures ([PDF]({{< baseurl >}}/resources/persistent)) (Courtesy of Sommer Gentry and Eddie Kohler.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n2_persistent))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+3
+{{< tdclose >}}
+{{< tdopen >}}
+Splay Trees
+{{< tdclose >}}
+{{< tdopen >}}
+Splay Trees ([PDF]({{< baseurl >}}/resources/dzhang_splaytree)) (Courtesy of Xin Zhang.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n3_splay))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+4
+{{< tdclose >}}
+{{< tdopen >}}
+Splay Trees (cont.)  
+Suffix Trees  
+Tries
+{{< tdclose >}}
+{{< tdopen >}}
+Suffix Trees and Fibonacci Heaps ([PDF]({{< baseurl >}}/resources/suffix))
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n4_suffix))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+{{< tdopen >}}
+Suffix Trees (cont.)  
+Tries (cont.)  
+Dial's Algorithm
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+{{< tdopen >}}
+Dijkstra's Algorithm  
+Van Emde Boas Queues
+{{< tdclose >}}
+{{< tdopen >}}
+Van Emde Boas Queues (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/veb)) (Courtesy of Abhi Shelat, Andrew Menard, and Akshay Patil.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n5_bucket))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+{{< tdopen >}}
+Van Emde Boas Queues (cont.)  
+Hashing
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n6_hashing))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+8
+{{< tdclose >}}
+{{< tdopen >}}
+2-Level Hashing  
+Network Flows
+{{< tdclose >}}
+{{< tdopen >}}
+Maximum Flows ([PDF]({{< baseurl >}}/resources/max_flow_dff)) (Courtesy of Alexandr Andoni.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n7_flow))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+9
+{{< tdclose >}}
+{{< tdopen >}}
+Network Flows: Augmenting Paths, Maximum Augmenting Paths, Scaling
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+{{< tdopen >}}
+Reductions between Flow Problems  
+Bipartite Matching  
+Shortest Augmenting Path  
+Blocking Flows
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+11
+{{< tdclose >}}
+{{< tdopen >}}
+Blocking Flows (cont.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+12
+{{< tdclose >}}
+{{< tdopen >}}
+Min-Cost Flows
+{{< tdclose >}}
+{{< tdopen >}}
+Min-Cost Flow Algorithms ([PDF]({{< baseurl >}}/resources/min_cost_flow)) (Courtesy of Wendy Chang.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n10_mincostflow))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+13
+{{< tdclose >}}
+{{< tdopen >}}
+Min-Cost Flows (cont.)  
+Linear Programming
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n10_mincostflow))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+14
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming (cont.)  
+Structure of Optima  
+Weak Duality
+{{< tdclose >}}
+{{< tdopen >}}
+Duality ([PDF]({{< baseurl >}}/resources/dualitynotes)) (Courtesy of Jay-Kumar Sundararajan.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+15
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming (cont.)  
+Strong Duality
+{{< tdclose >}}
+{{< tdopen >}}
+Duality([PDF]({{< baseurl >}}/resources/dualitynotes)) (Courtesy of Jay-Kumar Sundararajan.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+16
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming (cont.)  
+Complementary Slackness  
+Algorithms: Simplex, Ellipsoid
+{{< tdclose >}}
+{{< tdopen >}}
+Duality ([PDF]({{< baseurl >}}/resources/dualitynotes)) (Courtesy of Jay-Kumar Sundararajan.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+17
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming (cont.)  
+Algorithms: Interior Point
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+18
+{{< tdclose >}}
+{{< tdopen >}}
+Approximation Algorithms  
+NP-hard problems
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n15_approx))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+19
+{{< tdclose >}}
+{{< tdopen >}}
+4/3-Approximation for TSP
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+{{< tdopen >}}
+Relaxations  
+Directed TSP
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+21
+{{< tdclose >}}
+{{< tdopen >}}
+Randomized Rounding  
+Chernoff Bound  
+Fixed Parameter Tractability  
+Kernelization
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n22_fixedparam))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+22
+{{< tdclose >}}
+{{< tdopen >}}
+Online Algorithms (Ski Rental, Load Balancing, Paging)
+{{< tdclose >}}
+{{< tdopen >}}
+Lower Bounds for Competitive Ratios of Randomized  
+Online Algorithms ([PDF]({{< baseurl >}}/resources/ragnarok)) (Courtesy of Chun-Chieh Lin.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n23online))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+23
+{{< tdclose >}}
+{{< tdopen >}}
+Randomized Online Algorithms (Adversaries, Fiat's Marking Algorithm, Potential Functions, Yao's Minimax Principle)
+{{< tdclose >}}
+{{< tdopen >}}
+Lower Bounds for Competitive Ratios of Randomized  
+Online Algorithms ([PDF]({{< baseurl >}}/resources/ragnarok)) (Courtesy of Chun-Chieh Lin.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+24
+{{< tdclose >}}
+{{< tdopen >}}
+K-Server Problem  
+Double-Coverage Algorithm  
+Computational Geometry Introduction (Orthogonal Range Search)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+25
+{{< tdclose >}}
+{{< tdopen >}}
+Sweep Algorithms (Convex Hull, Segment Intersection, Voronoi Diagrams)
+{{< tdclose >}}
+{{< tdopen >}}
+Sweep Line ([PDF]({{< baseurl >}}/resources/rasmu_sweepline)) (Courtesy of Matt Rasmussen.)
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n25_geometry))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+26
+{{< tdclose >}}
+{{< tdopen >}}
+Sweep Algorithms (Voronoi Diagrams)  
+Randomized Incremental Constructions  
+Backwards Analysis  
+Linear Programming in Fixed Dimension
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+27
+{{< tdclose >}}
+{{< tdopen >}}
+(Optional Material) External Memory Algorithms
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n28_external))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+28
+{{< tdclose >}}
+{{< tdopen >}}
+(Optional Material) Cache Oblivious Algorithms: Matrix Multiplication, Linked Lists, Median
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+29
+{{< tdclose >}}
+{{< tdopen >}}
+(Optional Material) Cache Oblivious Algorithms: Search  
+Streaming Model
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+29
+{{< tdclose >}}
+{{< tdopen >}}
+(Optional Material) Parallel Algorithms  
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/n32parallel))
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
 
 {{< anchor "2004_version" >}}{{< /anchor >}}Lecture notes from the 2004 version of this course.
 
-| LEC # | TOPICS | SCRIBE NOTES |
-| --- | --- | --- |
-| 1 | Course Introduction  {{< br >}}Fibonacci Heaps | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec01_1999)) (Courtesy of David Andersen, Ioana Dumitriu, John Dunagan, and Akshay Patil.) |
-| 2 | Persistent Data Structures  {{< br >}}Suffix Trees | ([PDF 1]({{< baseurl >}}/resources/lec05_1999)) (Courtesy of Sommer Gentry and Eddie Kohler.)  {{< br >}}([PDF 2]({{< baseurl >}}/resources/lec01_2003)) (Courtesy of Jiawen Chen.) |
-| 3 | Suffix Trees (cont.) | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec02_2003)) |
-| 4 | Treaps | &nbsp; |
-| &nbsp; | Splay Trees | ([PDF]({{< baseurl >}}/resources/lec13_2001)) (Courtesy of Naveen Sunkavally.) |
-| 5 | Hashing: 2-Universal, Perfect Hashing  {{< br >}}Fingerprinting | &nbsp; |
-| 6 | Fingerprinting (cont.)  {{< br >}}Max Flows | ([PDF 1]({{< baseurl >}}/resources/lec01_2003)) (Courtesy of Jiawen Chen.)  {{< br >}}([PDF 2]({{< baseurl >}}/resources/lec06_2003)) (Courtesy of Alexandr Andoni.) |
-| 7 | Max Flows (cont.) | &nbsp; |
-| 8 | Max Flows (cont.) | &nbsp; |
-| 9 | Max Flows (Max Flow of Min Cost) | &nbsp; |
-| &nbsp; | Dynamic Trees  {{< br >}}Preflow-push Algorithm | &nbsp; |
-| 10 | Min Cost Flow Algorithms  {{< br >}}Linear Programming | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF 1]({{< baseurl >}}/resources/lec14_1999)) (Courtesy of Brian Dean and John Jannotti.) |
-| 11 | Linear Programming (cont.)  {{< br >}}Farkas Lemma  {{< br >}}Duality | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec10_2003)) (Courtesy of Vinod Vaikuntanathan.) |
-| &nbsp; | Goldberg-Tarjan Min-cost Flow | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec11_2001)) (Courtesy of Mohammad Hajiaghayi and Vahab Mirrokni.) |
-| 12 | Linear Programming: More Duality (Weak and Strong Duality)  {{< br >}}Complementary Slackness Conditions | &nbsp; |
-| 13 | Linear Programming: Complementary Slackness Conditions (Same Scribes as Above) | &nbsp; |
-| 14 | LP: Interior Points Algorithm  {{< br >}}Approximation Algorithms: Constant, Relative Approximation | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec12_2003)) (Courtesy of Jason Eisenberg.) |
-| 15 | Approximation Algorithm: PAS, FPAS, Rounding, Enumeration | &nbsp; |
-| 16 | Approximation Algorithm: Rounding, Relaxation | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec14_2003)) (Courtesy of Sachin Katti.) |
-| 17 | Approximation Algorithm: LP Relaxation, Randomized Rounding | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.) |
-| 18 | Fixed Parameter Tractability | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.) |
-| 19 | Fixed Parameter Tractability - Treewidth  {{< br >}}Online Algorithms | &nbsp; |
-| 20 | Online Algorithms (cont.): Paging, Randomization, Potential Functions | &nbsp; |
-| 21 | Randomized Online Algorithms (Adversarial Models, Marking Algorithm) | &nbsp; |
-| 22 | Lower Bounds for Randomized Online Algorithms  {{< br >}}Geometry: Range Search | (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec18_2003)) (Courtesy of Nick Harvey.) |
-| 23 | Convex Hulls  {{< br >}}Voronoi Diagrams | &nbsp; |
-| 24 | Voronoi Diagrams (cont.)  {{< br >}}Randomized Incremental Construction: Binary Space Partition | &nbsp; |
-| 25 | Backwards Analysis for RIC: Convex Hull, Linear Programming | &nbsp; |
-| 26 | External Memory Algorithms | &nbsp; |
-| 27 | Cache-oblivious Algorithms |
+{{< tableopen >}}
+{{< theadopen >}}
+{{< tropen >}}
+{{< thopen >}}
+LEC #
+{{< thclose >}}
+{{< thopen >}}
+TOPICS
+{{< thclose >}}
+{{< thopen >}}
+SCRIBE NOTES
+{{< thclose >}}
+
+{{< trclose >}}
+
+{{< theadclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+1
+{{< tdclose >}}
+{{< tdopen >}}
+Course Introduction  
+Fibonacci Heaps
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec01_1999)) (Courtesy of David Andersen, Ioana Dumitriu, John Dunagan, and Akshay Patil.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+2
+{{< tdclose >}}
+{{< tdopen >}}
+Persistent Data Structures  
+Suffix Trees
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF 1]({{< baseurl >}}/resources/lec05_1999)) (Courtesy of Sommer Gentry and Eddie Kohler.)  
+([PDF 2]({{< baseurl >}}/resources/lec01_2003)) (Courtesy of Jiawen Chen.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+3
+{{< tdclose >}}
+{{< tdopen >}}
+Suffix Trees (cont.)
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec02_2003))
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+4
+{{< tdclose >}}
+{{< tdopen >}}
+Treaps
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Splay Trees
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF]({{< baseurl >}}/resources/lec13_2001)) (Courtesy of Naveen Sunkavally.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+5
+{{< tdclose >}}
+{{< tdopen >}}
+Hashing: 2-Universal, Perfect Hashing  
+Fingerprinting
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+6
+{{< tdclose >}}
+{{< tdopen >}}
+Fingerprinting (cont.)  
+Max Flows
+{{< tdclose >}}
+{{< tdopen >}}
+([PDF 1]({{< baseurl >}}/resources/lec01_2003)) (Courtesy of Jiawen Chen.)  
+([PDF 2]({{< baseurl >}}/resources/lec06_2003)) (Courtesy of Alexandr Andoni.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+7
+{{< tdclose >}}
+{{< tdopen >}}
+Max Flows (cont.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+8
+{{< tdclose >}}
+{{< tdopen >}}
+Max Flows (cont.)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+9
+{{< tdclose >}}
+{{< tdopen >}}
+Max Flows (Max Flow of Min Cost)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Dynamic Trees  
+Preflow-push Algorithm
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+10
+{{< tdclose >}}
+{{< tdopen >}}
+Min Cost Flow Algorithms  
+Linear Programming
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF 1]({{< baseurl >}}/resources/lec14_1999)) (Courtesy of Brian Dean and John Jannotti.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+11
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming (cont.)  
+Farkas Lemma  
+Duality
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec10_2003)) (Courtesy of Vinod Vaikuntanathan.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+{{< tdopen >}}
+Goldberg-Tarjan Min-cost Flow
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec11_2001)) (Courtesy of Mohammad Hajiaghayi and Vahab Mirrokni.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+12
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming: More Duality (Weak and Strong Duality)  
+Complementary Slackness Conditions
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+13
+{{< tdclose >}}
+{{< tdopen >}}
+Linear Programming: Complementary Slackness Conditions (Same Scribes as Above)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+14
+{{< tdclose >}}
+{{< tdopen >}}
+LP: Interior Points Algorithm  
+Approximation Algorithms: Constant, Relative Approximation
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec12_2003)) (Courtesy of Jason Eisenberg.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+15
+{{< tdclose >}}
+{{< tdopen >}}
+Approximation Algorithm: PAS, FPAS, Rounding, Enumeration
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+16
+{{< tdclose >}}
+{{< tdopen >}}
+Approximation Algorithm: Rounding, Relaxation
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec14_2003)) (Courtesy of Sachin Katti.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+17
+{{< tdclose >}}
+{{< tdopen >}}
+Approximation Algorithm: LP Relaxation, Randomized Rounding
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+18
+{{< tdclose >}}
+{{< tdopen >}}
+Fixed Parameter Tractability
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+19
+{{< tdclose >}}
+{{< tdopen >}}
+Fixed Parameter Tractability - Treewidth  
+Online Algorithms
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+20
+{{< tdclose >}}
+{{< tdopen >}}
+Online Algorithms (cont.): Paging, Randomization, Potential Functions
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+21
+{{< tdclose >}}
+{{< tdopen >}}
+Randomized Online Algorithms (Adversarial Models, Marking Algorithm)
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+22
+{{< tdclose >}}
+{{< tdopen >}}
+Lower Bounds for Randomized Online Algorithms  
+Geometry: Range Search
+{{< tdclose >}}
+{{< tdopen >}}
+(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec18_2003)) (Courtesy of Nick Harvey.)
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+23
+{{< tdclose >}}
+{{< tdopen >}}
+Convex Hulls  
+Voronoi Diagrams
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+24
+{{< tdclose >}}
+{{< tdopen >}}
+Voronoi Diagrams (cont.)  
+Randomized Incremental Construction: Binary Space Partition
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+25
+{{< tdclose >}}
+{{< tdopen >}}
+Backwards Analysis for RIC: Convex Hull, Linear Programming
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+26
+{{< tdclose >}}
+{{< tdopen >}}
+External Memory Algorithms
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+{{< tropen >}}
+{{< tdopen >}}
+27
+{{< tdclose >}}
+{{< tdopen >}}
+Cache-oblivious Algorithms
+{{< tdclose >}}
+{{< tdopen >}}
+ 
+{{< tdclose >}}
+
+{{< trclose >}}
+
+{{< tableclose >}}
