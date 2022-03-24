@@ -120,7 +120,7 @@ Dijkstra's Algorithm
 Van Emde Boas Queues
 {{< tdclose >}}
 {{< tdopen >}}
-Van Emde Boas Queues (![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/veb)) (Courtesy of Abhi Shelat, Andrew Menard, and Akshay Patil.)
+Van Emde Boas Queues ([PDF]({{< baseurl >}}/resources/veb)) (Courtesy of Abhi Shelat, Andrew Menard, and Akshay Patil.)
 {{< tdclose >}}
 {{< tdopen >}}
 ([PDF]({{< baseurl >}}/resources/n5_bucket))
@@ -543,7 +543,7 @@ Course Introduction
 Fibonacci Heaps
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec01_1999)) (Courtesy of David Andersen, Ioana Dumitriu, John Dunagan, and Akshay Patil.)
+([PDF]({{< baseurl >}}/resources/lec01_1999)) (Courtesy of David Andersen, Ioana Dumitriu, John Dunagan, and Akshay Patil.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -569,7 +569,7 @@ Suffix Trees
 Suffix Trees (cont.)
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec02_2003))
+([PDF]({{< baseurl >}}/resources/lec02_2003))
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -682,7 +682,7 @@ Min Cost Flow Algorithms
 Linear Programming
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF 1]({{< baseurl >}}/resources/lec14_1999)) (Courtesy of Brian Dean and John Jannotti.)
+([PDF 1]({{< baseurl >}}/resources/lec14_1999)) (Courtesy of Brian Dean and John Jannotti.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -696,7 +696,7 @@ Farkas Lemma
 Duality
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec10_2003)) (Courtesy of Vinod Vaikuntanathan.)
+([PDF]({{< baseurl >}}/resources/lec10_2003)) (Courtesy of Vinod Vaikuntanathan.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -708,7 +708,7 @@ Duality
 Goldberg-Tarjan Min-cost Flow
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec11_2001)) (Courtesy of Mohammad Hajiaghayi and Vahab Mirrokni.)
+([PDF]({{< baseurl >}}/resources/lec11_2001)) (Courtesy of Mohammad Hajiaghayi and Vahab Mirrokni.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -746,7 +746,7 @@ LP: Interior Points Algorithm
 Approximation Algorithms: Constant, Relative Approximation
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec12_2003)) (Courtesy of Jason Eisenberg.)
+([PDF]({{< baseurl >}}/resources/lec12_2003)) (Courtesy of Jason Eisenberg.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -770,7 +770,7 @@ Approximation Algorithm: PAS, FPAS, Rounding, Enumeration
 Approximation Algorithm: Rounding, Relaxation
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec14_2003)) (Courtesy of Sachin Katti.)
+([PDF]({{< baseurl >}}/resources/lec14_2003)) (Courtesy of Sachin Katti.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -782,7 +782,7 @@ Approximation Algorithm: Rounding, Relaxation
 Approximation Algorithm: LP Relaxation, Randomized Rounding
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.)
+([PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -794,7 +794,7 @@ Approximation Algorithm: LP Relaxation, Randomized Rounding
 Fixed Parameter Tractability
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.)
+([PDF]({{< baseurl >}}/resources/lec15_2003)) (Courtesy of Shannon McDonald.)
 {{< tdclose >}}
 
 {{< trclose >}}
@@ -844,7 +844,7 @@ Lower Bounds for Randomized Online Algorithms
 Geometry: Range Search
 {{< tdclose >}}
 {{< tdopen >}}
-(![This resource may not render correctly in a screen reader.](/images/inacessible.gif)[PDF]({{< baseurl >}}/resources/lec18_2003)) (Courtesy of Nick Harvey.)
+([PDF]({{< baseurl >}}/resources/lec18_2003)) (Courtesy of Nick Harvey.)
 {{< tdclose >}}
 
 {{< trclose >}}
